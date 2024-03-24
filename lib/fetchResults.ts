@@ -58,7 +58,7 @@ export async function fetchResults(searchParams: SearchParams) {
               },
             ],
           },
-          links: {
+          link: {
             _fns: [
               {
                 _fn: 'xpath_one',
@@ -91,6 +91,14 @@ export async function fetchResults(searchParams: SearchParams) {
                 _args: [
                   ".//div[@class='a3b8729ab1 e6208ee469 cb2cbb3ccb']/text()",
                 ],
+              },
+            ],
+          },
+          rating: {
+            _fns: [
+              {
+                _fn: 'xpath_one',
+                _args: [".//div[@class='a3b8729ab1 d86cee9b25']/text()"],
               },
             ],
           },
